@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我所爱的</title>
+    <link rel="stylesheet" href="future.css"><!-- 引入css -->
+</head>
+<body>
+    <header>
+        <h1>不忘初心，方得始终</h1>
+        <nav><!-- 导航 -->
+            <ul>
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="food!!!.html" class="nav-link">究极吃货</a></li>
+                <li><a href="game.html" class="nav-link">快乐至上</a></li>
+                <li><a href="future.html" class="nav-link active">我所爱的</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="photo"><!--照片类 -->
+        <h2>我的小家</h2>
+        <figure><!-- 图片+论述 -->
+            <img src="images/一家人.jpg" alt="">
+            <figcaption>这是我的家人，我们在一起的时光总是很快乐。父母永远是我最珍视的人</figcaption>
+        </figure>
+    </section>
+    
+    <section class="photo">
+        <h2>我的女友</h2>
+        <figure>
+            <img src="images/超级大美女.jpg" alt="">
+            <figcaption>参见超级大美女，遇见她我真的觉得我很幸运呀</figcaption>
+        </figure>
+    </section>
+    <section class="photo">
+        <h2>辛苦的成果呀</h2>
+        <figure>
+            <img src="images/章程.jpg" alt="">
+            <img src="images/驾照.jpg" alt="">
+            <figcaption>大学！努力入了团，向更先进的集体靠拢！</figcaption>
+            <figcaption>大学里也有好好学习技能哦！</figcaption>
+        </figure>
+    </section>
+    <section class="photo">
+        <h2>想要的宠物</h2>
+        <figure>
+            <img src="images/萨摩耶.jpg" alt="">
+            <img src="images/布偶猫.jpg" alt="">
+            <figcaption>谁能拒绝可爱的萨摩耶！</figcaption>
+            <figcaption>布偶猫真好看，以后和我对象一猫一狗，幸福生活！</figcaption>
+        </figure>
+    </section>
+    <section class="feedback-form"><!-- 构造表单，联系表单开始 -->
+        <h2>都看到这儿了，我们做朋友吧！</h2>
+        <form action="/submit-feedback" method="post"> 
+            <label for="name">尊姓大名？：</label><!--标签-->
+            <input type="text" id="name" name="name" required><!--输入框-->
+            
+            <label for="email">留一个联系方式吧！：</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">对我有没有什么想说的话呢？：</label><!--文本框-->
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">提交</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>联系我：@1733148019.com</p>
+    </footer>
+</body>
+</html>

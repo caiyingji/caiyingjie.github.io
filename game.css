@@ -1,0 +1,151 @@
+/* 整体页面样式 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/背景图片.webp); /* 设置页面背景图片 */
+}
+
+/* 页眉样式 */
+header {
+    background-color: #222; /* 设置页眉背景颜色 */
+    color: #fff; /* 设置文字颜色 */
+}
+
+/* 页眉标题居中 */
+header h1 {
+    text-align: center;
+    padding: 0; /* 移除内边距 */
+}
+
+/* 导航栏样式 */
+nav ul {
+    list-style: none; /* 移除列表点 */
+    padding: 0;
+    display: flex; /* 使用flex布局 */
+    justify-content: center; /* 导航项居中 */
+    background-color: #444; /* 设置导航栏背景颜色 */
+}
+
+/* 导航项样式 */
+nav ul li {
+    margin: 0 10px; /* 设置导航项间距 */
+}
+
+/* 导航链接样式 */
+.nav-link {
+    color: #fff; /* 设置链接颜色 */
+    text-decoration: none; /* 移除下划线 */
+    padding: 10px 15px;
+    transition: background-color 0.3s; /* 设置背景颜色变化动画 */
+}
+
+/* 导航链接悬停和激活状态 */
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+    background-color: #555; /* 设置悬停背景颜色 */
+}
+
+/* 导航链接访问过后 */
+a:visited {
+    color: #bbb; /* 设置访问后颜色 */
+}
+
+/* 引言区样式 */
+.introduction {
+    display: flex; /* 使用flex布局 */
+    justify-content: center; /* 内容居中 */
+    margin: 20px 0;
+    padding: 0 20px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+/* 游戏展示区 */
+.game-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* 设置间隔 */
+    margin: 20px auto;
+    padding: 0;
+}
+
+/* 游戏 */
+.game {
+    flex-basis: calc(33.333% - 20px); /* 设置宽度 */
+    margin: 10px;
+    text-align: center;
+}
+
+/* 游戏图片的归类限制 */
+.game img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* 设置图片放大动画 */
+}
+
+/* 游戏图片悬停效果 */
+.game:hover img {
+    transform: scale(1.05);
+}
+
+/* 游戏标题和段落 */
+.game h3,
+.game p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+/* 结尾区 */
+.conclusion {
+    text-align: center;
+    justify-content: center;
+}
+
+/* 结尾段落 */
+.conclusion p {
+    font: 1.2em sans-serif;/* 放大到1.2em，起到强调效果 */
+    font-weight: 200;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* 游戏排名区域 */
+.gamerank {
+    margin: 20px 0;
+}
+
+.gamerank h3 {
+    margin-bottom: 10px;
+}
+
+/* 表格 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+/* 表头和单元格 */
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* 表头背景色 */
+th {
+    background-color: #f4f4f4;
+}
+
+/* 页脚 */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}

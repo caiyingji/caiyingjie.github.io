@@ -1,0 +1,106 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-align: center;
+}
+body{
+    /* 设置背景图片 */
+    background-image: url(images/背景图片.webp);
+}
+
+
+.page-wrapper
+ {
+    display: flex;/* 使用flexbox弹性布局 */
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 页眉 */
+header {
+    background-color: #222; /* 背景深灰 */
+    color: #fff; /* 文字白色 */
+}
+
+header h1 {
+    text-align: center; /* 居中对齐 */
+    padding: 0; /* 内边距设置0 */
+}
+
+/* 导航 */
+nav ul {
+    padding: 0;
+    display: flex; /* 使用flexbox布局 */
+    justify-content: center; /* 导航项水平居中对齐 */
+    background-color: #444; /* 导航栏背景颜色设置为深灰色 */
+}
+
+nav ul li {
+    margin: 0 10px; /* 导航项左右外边距设置 */
+}
+
+/* 超链接的默认样式 */
+.nav-link {
+    color: #fff; /* 超链接文字颜色设置为白色 */
+    text-decoration: none; /* 移除超链接的下划线 */
+    padding: 10px 15px;
+    transition: background-color 0.3s; /* 鼠标悬停时背景颜色变化的过渡效果 */
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+    background-color: #555; /* 超链接悬停或聚焦时的背景颜色 */
+}
+
+
+a:visited {
+    color: #bbb /* 访问过后的颜色改为较暗的灰色 */
+}
+
+main.overview {
+    flex: 1; /* 设定flex布局 */
+    text-align: center; /* 文字居中对齐 */
+    padding: 20px; /* 内边距为20px */
+    box-sizing: border-box; /* 边框和内边距计算在宽度内 */
+}
+
+.overview-images {
+    display: flex; /* 使用flexbox布局 */
+    justify-content: center; /* 水平居中对齐 */
+    align-items: flex-start; /* 容器的顶部对齐 */
+    flex-wrap: nowrap; /* 不允许换行 */
+    margin: 0 auto; /* 水平自动居中 */
+    padding: 0;
+}
+
+
+.image-container {
+    flex: 0 0 calc(25% - 20px); /* flex布局，固定宽度，四张图片平均分布，减去间距 */
+    margin: 0 10px; /* 设置左右外边距 */
+    padding: 0;
+    overflow: hidden; /* 隐藏溢出部分 */
+    text-align: center; /* 图片水平居中 */
+}
+
+
+.image-container img {
+    width: 100%; /* 图片宽度充满容器 */
+    height: auto; /* 保持图片比例 */
+    display: block; /* 移除图片的默认行内间距 */
+    border: 0; /* 无边框 */
+    margin: 0 auto; /* 水平自动居中 */
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* 鼠标悬停时图片放大到1.1倍 */
+    transition: transform 0.3s ease-in-out; /* 平滑过渡 */
+}
+/* 页脚*/
+footer {
+    padding: 1em 0; /* 上下内边距为1em */
+    text-align: center; /* 文字居中对齐 */
+    background-color: #333; /* 背景深灰色 */
+    color: #fff; /* 文字白色 */
+}

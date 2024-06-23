@@ -1,0 +1,108 @@
+/* 页面整体样式 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/背景图片.webp);
+}
+/* 页眉区域样式 */
+header {
+    background-color: #222; /* 背景颜色为深灰色 */
+    color: #fff; /* 文字颜色为白色 */
+}
+
+/* 页眉中的标题样式 */
+header h1 {
+    text-align: center; /* 文字居中对齐 */
+    padding:  0; /* 上下内边距为1em */
+}
+
+/* 导航栏样式 */
+nav ul {
+    list-style: none; /* 移除列表项的默认样式 */
+    padding: 0;
+    display: flex; /* 使用flexbox布局 */
+    justify-content: center; /* 子元素水平居中对齐 */
+    background-color: #444; /* 背景颜色为较深的灰色 */
+}
+
+/* 导航栏中的列表项样式 */
+nav ul li {
+    margin: 0 10px; /* 列表项左右外边距为10px */
+}
+
+/* 超链接的默认样式 */
+.nav-link {
+    color: #fff; /* 默认文字颜色为白色 */
+    text-decoration: none; /* 移除下划线 */
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+/* 超链接在鼠标悬停、聚焦或激活时的样式 */
+.nav-link:hover,
+.nav-link:focus,
+.nav-link.active {
+    background-color: #555; /* 鼠标悬停或聚焦时的背景颜色 */
+}
+
+/* 超链接在用户访问过后的样式 */
+a:visited {
+    color: #bbb /* 访问过后的颜色改为较暗的灰色 */
+}
+/**/
+.figure/*构建figure类，便于图文结合*/
+{
+    display: flex;/*采用弹性flex布局*/
+    justify-content: center;/*水平居中*/
+    align-items: center;/*垂直居中*/
+    margin: auto;
+    flex-wrap: nowrap;
+}
+.photo {/*图片*/
+    text-align: center;
+    margin: 50px 0;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #666;
+}
+
+
+
+.feedback-form{/* 表单 */
+    margin: 20px 0; /* 上下外边距为20px */
+    padding: 20px; /* 内边距为20px */
+    background: #fff; /* 背景颜色为白色 */
+    border-radius: 8px; /* 边框圆角为8px */
+}
+input[type="text"], input[type="email"], textarea {/*文本输入框*/
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button[type="submit"] {/*提交*/
+    padding: 10px 20px;
+    background: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: #4cae4c;
+}
+
+footer {
+    padding: 1em 0; /* 上下内边距为1em */
+    text-align: center; /* 文字居中对齐 */
+    background-color: #333; /* 背景颜色为深灰色 */
+    color: #fff; /* 文字颜色为白色 */
+}
